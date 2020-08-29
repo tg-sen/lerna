@@ -16,6 +16,7 @@
     "lerna": "^3.22.1"
   },
   "dependencies": {
+    "@kintone/rest-api-client": "file:packages/rest-api-client",
     "abc": "file:packages/abc"
   }
 }
