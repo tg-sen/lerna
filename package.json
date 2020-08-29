@@ -10,6 +10,12 @@
     "build": "lerna run build --parallel"
   },
   "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
     "lerna": "^3.22.1"
+  },
+  "dependencies": {
+    "abc": "file:packages/abc"
   }
 }
