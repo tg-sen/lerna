@@ -7,3 +7,6 @@
   npm i -g lerna 
 
 
+
+### 追加の際は
+  lerna link convert
