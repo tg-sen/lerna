@@ -4,8 +4,10 @@
 
 [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/)
 
-  npm i -g lerna 
+## 始め方
 
+  npm i -g lerna 
+  npx lerna init
 
 
 ### 既存パッケージに追加したnpmパッケージのグローバル化は
@@ -14,14 +16,23 @@
 - 未検証
     lerna import パッケージ名
 
-### パッケージ追加は
+### npmパッケージ追加
+
+#### lernaコマンドでの追加
     npx lerna create @kintone/rest-api-client
 
-### yarn ワークスペースへのパッケージの追加はパッケージを指定して
+#### yarn ワークスペースへの追加はパッケージを指定して
     yarn workspace @kintone/rest-api-client add form-data
 
-### 共通のパッケージの追加は -W を追加して
+#### 共通のパッケージ追加は -W を追加して
     yarn add -W --dev typescript prettier eslint
 
-### 全てのパッケージに共通して実行するには
+### 全てのパッケージに対し、予め全パッケージに追加した実行scriptをを実行するには
     lerna run "実行script"
+
+
+### パッケージ取り込み
+
+    git clone git@github.com:sen-corporation/hoisys_note.git packages/note
+    git clone git@github.com:sen-corporation/hoisys_manage.git packages/manage
+    git clone git@github.com:sen-corporation/hoisys.git packages/hoisys
